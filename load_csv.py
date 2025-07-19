@@ -11,3 +11,13 @@ print(df.head())
 # Show statistical summary of numerical columns
 print("\nStatistical Summary:")
 print(df.describe())
+
+print(df['Survived'].value_counts())
+
+print(df.groupby('Sex')['Survived'].mean())
+
+print(df.isnull().sum())
+
+df = df.dropna(subset=['Age'])
+
+df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
