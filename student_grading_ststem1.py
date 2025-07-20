@@ -35,6 +35,36 @@ for i in range(num_students):
     average = total / 4
     grade = get_grade(average)
 
+  
+    
+    
+    
+    #output
+    Enter total number of students: 2
+
+📄 Enter marks for Student 1:
+Math marks: 87
+Science marks: 88
+English marks: 68
+Computer marks: 98
+
+📊 Report for Student 1:
+Total Marks: 341.0
+Average Marks: 85.25
+Grade: A
+
+📄 Enter marks for Student 2:
+Math marks: 77
+Science marks: 87
+English marks: 67
+Computer marks: 95
+
+📊 Report for Student 2:
+Total Marks: 326.0
+Average Marks: 81.50
+Grade: B
+
+
     print(f"\n📊 Report for Student {i+1}:")
     print(f"Total Marks: {total}")
     print(f"Average Marks: {average:.2f}")
